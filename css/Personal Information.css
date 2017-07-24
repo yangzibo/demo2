@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none; }
+
+header {
+  background: orange; }
+  header div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.6rem;
+    color: white; }
+    header div a {
+      padding-left: 0.6rem;
+      padding-top: 0.4rem;
+      transform: scale(1.5); }
+      header div a span {
+        font-size: 20px;
+        color: white; }
+    header div span {
+      font-size: 20px; }
+
+.wanshan {
+  width: 100%;
+  height: 3rem;
+  background-color: orange;
+  padding: 0.65rem 0 0.55rem;
+  display: flex;
+  justify-content: space-between; }
+  .wanshan .wanshan-left {
+    display: flex;
+    margin-left: 0.5rem; }
+    .wanshan .wanshan-left .wanshan-left-left img {
+      width: 3rem; }
+    .wanshan .wanshan-left .wanshan-left-right {
+      margin-left: 1.4rem; }
+      .wanshan .wanshan-left .wanshan-left-right div {
+        margin-left: -0.5rem;
+        margin-top: -0.2rem; }
+        .wanshan .wanshan-left .wanshan-left-right div span {
+          color: black;
+          margin-left: -0.5rem; }
+        .wanshan .wanshan-left .wanshan-left-right div div {
+          color: black;
+          width: 4rem;
+          height: 1.5rem;
+          background-color: yellow;
+          font-size: 12px;
+          text-align: center;
+          line-height: 1.5rem;
+          border-radius: 5px; }
+  .wanshan .wanshan-right {
+    margin-right: 1rem; }
+    .wanshan .wanshan-right div {
+      width: 4rem;
+      height: 1.5rem;
+      border-radius: 5px;
+      background-color: pink;
+      margin-top: 1rem;
+      text-align: center;
+      line-height: 1.5rem;
+      color: red;
+      font-size: 14px; }
+
+.guanzhu {
+  width: 100%;
+  height: 2rem;
+  background-color: #E3E3E3; }
+  .guanzhu span {
+    font-size: 14px;
+    line-height: 2rem;
+    margin-left: 1rem; }
+
+.ziliao .ziliao-email {
+  width: 100%;
+  height: 2.5rem;
+  border-bottom: solid 1px #E3E3E3;
+  display: flex;
+  justify-content: space-between; }
+  .ziliao .ziliao-email span {
+    line-height: 2.5rem;
+    font-size: 15px;
+    color: black;
+    margin-left: 1rem; }
+  .ziliao .ziliao-email div {
+    margin-right: 0.5rem; }
+    .ziliao .ziliao-email div span {
+      color: #E3E3E3;
+      margin-left: -0.1rem; }
+.ziliao .lianxi-email {
+  width: 100%;
+  height: 2.5rem;
+  border-bottom: solid 1px #E3E3E3;
+  display: flex;
+  justify-content: space-between; }
+  .ziliao .lianxi-email span {
+    color: black;
+    line-height: 2.5rem;
+    font-size: 15px;
+    margin-left: 1rem; }
+  .ziliao .lianxi-email div {
+    margin-right: 0.5rem; }
+    .ziliao .lianxi-email div span {
+      margin-left: -0.1rem; }
+.ziliao .shouji-email {
+  width: 100%;
+  height: 2.5rem;
+  border-bottom: solid 1px #E3E3E3;
+  display: flex;
+  justify-content: space-between; }
+  .ziliao .shouji-email span {
+    color: black;
+    line-height: 2.5rem;
+    font-size: 15px;
+    margin-left: 1rem; }
+  .ziliao .shouji-email div {
+    margin-right: 0.5rem; }
+    .ziliao .shouji-email div span {
+      margin-left: -0.1rem; }
+.ziliao .card-email {
+  width: 100%;
+  height: 2.5rem;
+  border-bottom: solid 1px #E3E3E3;
+  display: flex;
+  justify-content: space-between; }
+  .ziliao .card-email span {
+    color: black;
+    line-height: 2.5rem;
+    font-size: 15px;
+    margin-left: 1rem; }
+  .ziliao .card-email div {
+    margin-right: 0.5rem; }
+    .ziliao .card-email div span {
+      color: #E3E3E3;
+      margin-left: -0.1rem; }
+.ziliao .card1-email {
+  width: 100%;
+  height: 2.5rem;
+  border-bottom: solid 1px #E3E3E3;
+  display: flex;
+  justify-content: space-between; }
+  .ziliao .card1-email span {
+    color: black;
+    line-height: 2.5rem;
+    font-size: 15px;
+    margin-left: 1rem; }
+  .ziliao .card1-email div {
+    margin-right: 0.5rem; }
+    .ziliao .card1-email div span {
+      color: #E3E3E3;
+      margin-left: -0.1rem; }
+
+.tijiao {
+  width: 100%;
+  text-align: center;
+  margin-top: 0.85rem; }
+  .tijiao input {
+    border-radius: 5px;
+    width: 15rem;
+    height: 2rem;
+    background-color: orange;
+    color: white;
+    font-size: 16px; }
+
+.tanchu {
+  width: 100%;
+  position: absolute;
+  display: none; }
+  .tanchu .tanchu-background {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5; }
+  .tanchu .tanchu-xuanze {
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    line-height: 30px;
+    transition: 2s all; }
+    .tanchu .tanchu-xuanze a {
+      font-size: 15px;
+      color: black; }
+    .tanchu .tanchu-xuanze a:hover {
+      background-color: red; }
+    .tanchu .tanchu-xuanze a:last-child {
+      color: orange; }
+
+/*# sourceMappingURL=Personal%20Information.css.map */

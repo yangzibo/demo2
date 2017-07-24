@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/modify_phone.css"/>
+		<script src="../js/rem.js"></script>
+		<script src="../js/zepto.min.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				var hao = "13653676829";
+				var myhao = hao.substr(4,3);
+				var lhao = hao.replace(myhao,"****")
+				$(".hao").html(lhao)
+				
+				$("#fa").on("click",function(){
+					t()
+				})
+				var a=60
+				function t(){
+					$("#fa").attr("disabled","disabled")
+					var inter= setInterval(inte,1000)
+					function inte(){
+						a--
+						$("#fa").val(a)
+						
+						if(a<0){
+							$("#fa").val("发送验证码")
+							$("#fa").removeAttr("disabled")
+							clearInterval(inter)
+							a=60
+						}
+
+
+					}
+				}
+				
+				
+			})
+			
+		</script>
+	</head>
+	<body>
+		<div class="header">
+			<a href="#"><img src="../img/icon_1.png"/></a>
+			<span>密码验证</span>
+		</div>
+		<div class="content">
+			<div class="phone">
+				<p class="shen">请输入原登录密码验证身份</p>
+				<p class="hao"></p>
+			</div>
+			<div class="yan">
+				<img src="../img/icon_03.png" class="shuo"/>
+				<input type="password" class="shu" name="" id="" placeholder="输入原登录密码" />
+				<input type="button" class="fa" value="发送验证码" id="fa"/>
+				
+			</div>
+			<a href="modify.html"><input class="qd" type="button" value="确定" /></a>
+		</div>
+	</body>
+</html>

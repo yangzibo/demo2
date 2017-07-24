@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<link rel="stylesheet" href="../css/app1.css" />
+		<link rel="stylesheet"href="../font-awesome/css/font-awesome.css"/>
+		<title></title>
+		<script>
+			 (function(){
+//           	浏览器缩放时触发
+                window.onresize=function(){
+                	change();
+                };
+                change();
+                function change(){
+                	var oFs=document.documentElement.clientWidth/(640/20);
+//              	设置根目录字体大小；
+                    document.documentElement.style.fontSize=oFs+"px";
+                    
+                }
+             })()
+		</script>
+	</head>
+	<body>
+		<nav>
+			<span><a href="Personal.html" class="fa fa-angle-left"></a></span>
+			<span>应用信息</span>
+			<span></span>
+		</nav>
+		<main>
+			<img src="../img/shanzu_01.gif"/>
+		    <p>您的账户中暂无应用信息</p>
+		    <p>请用PC端登录<a  href="app2.html">http://shanzhu.rntd.cn/</a>添加应用</p>
+		</main>
+	</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<!--防乱编码-->
+		<meta charset="UTF-8">
+		<!--优先使用IE最新版本和Chrome-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chome=1" />
+		<!--视口--设备宽度--初始缩放比例--最小缩放比例--最大缩放比例--用户缩放-->
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!--禁止浏览器自动的识别-电话号码-email--->
+		<meta name="format-detection" content="telephone=no,email=no" />
+		<!--是否启用Web全屏-->
+		<meta name="apple-mobile-web-app-capable" content='yes' />
+		<meta name="apple-mobile-web-status-bar-style" content="normal|black|black-translucent">
+		<!--设置苹果工具栏颜色-->
+		<meta name="apple-mobile-web-app-status-bar-style" content='black' />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/password.css" />
+		<link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.css" />
+	</head>
+
+	<body>
+		<ul class="password">
+			<li>
+				<a href="Forgot_password.html"><span class="fa fa-angle-left"></span></a>
+				<p>忘记秘密</p>
+				<span></span>
+			</li>
+			<li>
+				请输入您收的验证码
+			</li>
+			<li>
+				<p><img src="../img/mailbox.png" /></p>
+				<input type="text" name="" id="" value="" placeholder="验证码" />
+				<p id="time">60</p>
+			</li>
+			<li>
+				<div id="content">
+					<a  class="add">下一步</a>
+				</div>
+			</li>
+		</ul>
+	</body>
+	<script src="../js/jquery-1.7.2.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			var s = 59;
+			setInterval(function() {
+				if(s < 10) {
+					//如果秒数少于10在前面加上0
+					$('#time').html(s);
+				} else {
+					$('#time').html(s + "s");
+				}
+				s--;
+				if(s < 0) {
+					//如果秒数少于0就变成59秒
+					s = 59;
+					//					m--;
+				}
+			}, 1000)
+//			alert(sessionStorage.getItem("code"))
+          $(".add").click(function(){
+          	var code=sessionStorage.getItem("code")
+          	if($("input").eq(0).val()!=code){
+          		alert("验证码错误")
+          	}else{
+          		location.href="Reset.html"
+          	}
+          })
+		})
+	</script>
+
+</html>

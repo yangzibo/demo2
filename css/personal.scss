@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    text-decoration: none;
+}
+body{
+    background: #f5f5f5;
+}
+
+.header{
+    height: 9.8rem;
+    background: url(../img/banner_1.png) repeat-x;
+    background-size:4.5em;
+    text-align: center;
+
+    img{
+        height: 4.05rem;
+        margin-top: 2.1rem;
+        margin-bottom: 0.6rem;
+    }
+    .ge{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.45rem;
+        color: white;
+        div{
+            height: 0.85rem;
+            width: 2.7rem;
+            line-height: 0.85rem;
+            background: #ffc801;
+            margin-left: 0.2rem;
+            border-radius: 2px;
+        }
+        a{
+                font-size: 0.45rem;
+                color: white;
+                text-decoration: none;
+            }
+    }
+}
+
+.zhang{
+    height: 4.7rem;
+    background: white;
+    display: flex;
+    border-bottom: 1px solid #e6e6e6;
+    .z_l{
+        color: #aaaaaa;
+        font-size: 0.5rem;
+        margin-right: 3.5rem;
+        margin-top: 0.85rem;
+        margin-left: 0.7rem;
+        p{
+            &:nth-of-type(1){
+                margin-bottom: 0.5rem;
+            }
+        }
+        span{
+            color: #f95d04;
+            font-size: 2rem;
+        }
+    }
+        img{
+            height: 3.55rem;
+            margin-top: 0.75rem;
+        }
+}
+.floot{
+            margin-top: 0.7rem;
+            margin-bottom: 4.25rem;
+    ul{
+            border-top:1px solid #eaeaea ;
+        
+        li{
+            background: white;
+            display: flex;
+            &:nth-of-type(3){
+            border-bottom:1px solid #eaeaea ;
+                
+                div{
+                    border: 0;
+                }
+            }
+            a{
+                display: flex;
+                align-items: center;
+                .biao{
+                    height: 1rem;
+                    margin-left: 0.75rem;
+                    margin-right: 0.8rem;
+                }
+
+                div{
+                    
+                    align-items: center;
+                    height: 1.875rem;
+                    font-size: 0.6rem;
+                    border-bottom: 1px solid #eaeaea;
+                    width: 13.45rem;
+                    line-height: 1.875rem;
+                    
+                    p{
+                        &:nth-of-type(1){
+                            color: #000000;
+                            font-size: 0.7rem;
+                            float: left;
+                        }
+                        &:nth-of-type(2){
+                            float: right;
+                            color: #fa6311;
+                        }
+                    }
+                    span{
+                        float: right;
+                        display: block;
+                        margin-left: 0.45rem;
+                        margin-right: 0.45rem;
+                    }
+                    img{
+
+                        height: 0.5rem;
+                        
+
+                    }
+                }
+            }
+            
+        }
+        .she{
+            margin-top: 0.7rem;
+            border-top:1px solid #eaeaea ;
+            border-bottom:1px solid #eaeaea ;
+            div{
+                    border: 0;
+                }
+        }
+    }
+    
+}

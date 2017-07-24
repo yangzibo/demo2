@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="../css/app2.css" />
+		<link rel="stylesheet"href="../font-awesome/css/font-awesome.css"/>
+	</head>
+	<script>
+		 (function(){
+//           	浏览器缩放时触发
+                window.onresize=function(){
+                	change();
+                };
+                change();
+                function change(){
+                	var oFs=document.documentElement.clientWidth/(640/20);
+//              	设置根目录字体大小；
+                    document.documentElement.style.fontSize=oFs+"px";
+                    
+                }
+             })()
+	</script>
+	<body>
+		<nav>
+			<span><a href="app3.html" class="fa fa-angle-left"></a></span>
+			<span>新增应用</span>
+			<span></span>
+		</nav>
+		<div class="banner">
+			<img src="../img/shanzhu_02.gif" />
+		</div>
+		<main>
+			<ul>
+				<li>应用消息</li>
+				<li>
+					<p><span>*</span>接口密码</p>
+				    <p>SDK或者接口密码<a href="#">></a></p>
+				</li>
+				<li>
+					<p><span>*</span>通信秘钥</p>
+				    <p>SDK或者接口通信加解密密钥<a href="#">></a></p>
+				</li>
+				<li>APP信息</li>
+				<li>
+					<p>名称</p>
+				    <p>APP名称<a href="#">></a></p>
+				</li>
+				<li>
+					<p>包名</p>
+				    <p>APP的真实包名<a href="#">></a></p>
+				</li>
+				<li>
+					<p>LOGO文件</p>
+				    <p>图形类型：jpg,png大小：1M<a href="#">></a></p>
+				</li>
+				<li>
+					<p>APP截图</p>
+				    <p>图形类型：jpg,png大小：1M<a href="#">></a></p>
+				</li>
+				<li>H5/web信息 <span>用户注册时发送的短信内容(此内容为前缀,后跟校验码)</span></li>
+				<li>
+					<p>短信内容</p>
+				    <p>长度不得超过20个字<a href="#">></a></p>
+				</li>
+			</ul>
+		</main>
+		<footer>
+			<a href="app3.html"><input type="button" value="提交" /></a>
+		</footer>
+		
+	</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="../css/app3.css" />
+		<link rel="stylesheet"href="../font-awesome/css/font-awesome.css"/>
+		<title></title>
+	</head>
+	<script>
+		 (function(){
+//           	浏览器缩放时触发
+                window.onresize=function(){
+                	change();
+                };
+                change();
+                function change(){
+                	var oFs=document.documentElement.clientWidth/(640/20);
+//              	设置根目录字体大小；
+                    document.documentElement.style.fontSize=oFs+"px";
+                    
+                }
+             })()
+             
+             window.onload = function(){
+             	var oul = document.getElementById("ul")
+                var box = document.getElementsByClassName("box")[0];
+                var box1 = document.getElementsByClassName("box")[1];
+                var box2 = document.getElementsByClassName("box")[2];
+                var img = document.getElementById("img")
+                var img1 = document.getElementById("img1")
+                var img2 = document.getElementById("img2")
+                var li = document.getElementsByClassName("li1")[0];
+                var li1 = document.getElementsByClassName("li1")[1];
+                var li2 = document.getElementsByClassName("li1")[2];
+                var n=0;
+                img.onclick = function(){
+                	n++
+//              	li.style.display ="none";
+//              	li1.style.display ="block";
+//              	box1.style.display = "none";
+//              	box2.style.display = "none";
+//              	box.style.display = "block";
+                    if(n%2!=0){
+                    	box.style.display = "block";
+                    }
+                    else{
+                    	box.style.display = "none";
+                    }
+                	
+                }
+                 img1.onclick = function(){
+                 	n++
+//               	li1.style.display ="none";
+//               	li.style.display ="none";
+//              	box2.style.display = "none";
+//              	box1.style.display = "block";
+//              	box.style.display = "none";
+                	if(n%2!=0){
+                    	box1.style.display = "block";
+                    }
+                    else{
+                    	box1.style.display = "none";
+                    }
+                	
+                }
+                 img2.onclick = function(){
+                 	n++
+                	if(n%2!=0){
+                    	box2.style.display = "block";
+                    }
+                    else{
+                    	box2.style.display = "none";
+                    }
+                }
+                
+             	
+             }
+	</script>
+	<body>
+		<nav>
+			<span><a href="Personal.html" class="fa fa-angle-left"></a></span>
+			<span>应用信息</span>
+			<span><a href="app2.html">新增应用</a></span>
+		</nav>
+		<main>
+			<ul id="ul">
+				<li  id="img">
+					<div>
+						<img src="../img/shanzu_03.gif" />
+					</div>
+					<div>
+						<p><span>开心消消乐</span>&nbsp;【 签名 : 消消乐 】</p>
+					    <p>应用场景 : APP , H5/web</p>
+					</div>
+
+				</li>
+				<li class="li1"></li>
+				<li class="box">
+						<ol>
+							<li>应用名称 : <span>开心消消乐</span></li>
+							<li>通信秘钥:<span>XXXXX</span></li>
+							<li>有效时间 : <span>2016/7/1-2017/7/1</span></li>
+							<li>应用场景 : APP ,H5/web</li>
+							<li>闪注注册量 : 151( 人 )  <p>短信注册量: 89 ( 人 )</p></li>
+		
+	                    </ol>
+				</li>
+			     <li  id="img1">
+					<div>
+						<img src="../img/shanzu_04.gif"/>
+					</div>
+					<div>
+						<p><span>大话西游</span>&nbsp;【 签名 : 大话西游 】</p>
+					    <p>应用场景 : APP , H5/web</p>
+					</div>
+
+				</li>
+				<li class="li1"></li>
+				<li class="box">
+						<ol>
+							<li>应用名称 : <span>大话西游</span></li>
+							<li>通信秘钥:<span>XXXXX</span></li>
+							<li>有效时间 : <span>2016/7/1-2017/7/1</span></li>
+							<li>应用场景 : APP ,H5/web</li>
+							<li>闪注注册量 : 100( 人 )  <p>短信注册量: 79 ( 人 )</p></li>
+		
+	                    </ol>
+				</li>
+				<li  id="img2">
+					<div>
+						<img src="../img/shanzu_05.gif"  />
+					</div>
+					<div>
+						<p><span>王者荣耀</span>&nbsp;【 签名 : 王者荣耀 】</p>
+					    <p>应用场景 : APP , H5/web</p>
+					</div>
+
+				</li>
+				<li class="box">
+						<ol>
+							<li>应用名称 : <span>王者荣耀</span></li>
+							<li>通信秘钥:<span>XXXXX</span></li>
+							<li>有效时间 : <span>2016/7/1-2017/7/1</span></li>
+							<li>应用场景 : APP ,H5/web</li>
+							<li>闪注注册量 : 1511( 人 )  <p>短信注册量: 879 ( 人 )</p></li>
+		
+	                    </ol>
+				</li>
+				
+			</ul>
+		</main>
+	</body>
+</html>
+
+
+

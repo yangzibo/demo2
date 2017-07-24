@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minmum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="format-detection" content="telephone=no, email=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+		<link rel="stylesheet" href="../css/font-awesome.min.css" />
+		<link rel="stylesheet" href="../css/details_balance.css" />
+	</head>
+	<body>
+		<header>
+			<a href="details.html"><i class="fa fa-angle-left"></i></a>
+			<p>余额转换</i></a></p>
+		</header>
+		<div class="balance_lo">
+			<div class="lo_top">
+				<div class="top_d">短</div>
+				<div class="top_y">余额转换</div>
+				<div class="top_s">闪</div>
+			</div>
+			<div class="lo_bottom">您仅可以将短信量转为闪注量</div>
+		</div>
+		<div class="detailsBalance_content">
+			<div class="cont_top">当前短信账户余额为：100条</div>
+			<ul class="cont_list">
+				<li>
+					<div>短信量</div>
+					<div>您做多可转换短信量100条</div>
+				</li>
+				<li>
+					<div>闪注量</div>
+					<div>0</div>
+				</li>
+			</ul>
+			<div class="cont_bottom" id="show">余额转换</div>
+		</div>
+		<div class="balance_b" id="win">
+			<div class="b_con">
+				<div>余额转换成功!</div>
+				<div id="show1">确定</div>
+			</div>
+		</div>
+		<script src="../js/jquery-3.1.1.js"></script>
+		<script src="../js/font.js"></script>
+		<script>
+			$("#show").click(function(){
+				$("#win").show()
+				$("#show1").click(function(){
+					$("#win").hide()
+				})
+			})
+		</script>
+	</body>
+</html>

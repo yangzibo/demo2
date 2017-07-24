@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="../css/modify_original.css"/>
+		<script src="../js/rem.js"></script>
+		<script src="../js/zepto.min.js"></script>
+		
+		<script type="text/javascript">
+			$(function(){
+				$("#qd").click(function(){
+					$("#sum").css("display","block")
+					
+					
+					clearTimeout(sum)
+					function hide(){
+						$("#sum").css("display","none")
+					}
+					var sum=setTimeout(hide,1000)
+					
+				})
+				
+				
+				$("#sum").click(function(){
+					$("#sum").css("display","none")
+					clearTimeout(sum)
+				})
+				$("#yan").bind({
+				click: function() {
+
+					if($('#con').prop('type') == 'password') {
+						$('#con').prop('type', 'text')
+					} else {
+						$('#con').prop('type', 'password')
+					}
+				}
+			});
+				
+			})
+		</script>
+	</head>
+	<body>
+		<div class="header">
+			<a href="#"><img src="../img/icon_1.png"/></a>
+			<span>修改登录密码</span>
+		</div>
+		<div class="content">
+			<p>请输入长度为6-24位的密码</p>
+			<div class="yan">
+				<img src="../img/icon_03.png" class="shuo"/>
+				<input type="password" name="" id="con" placeholder="输入新登录密码" />
+				<span id="yan"><img src="../img/eye.png"/></span>
+			</div>
+			<input id="qd" class="qd" type="button" value="确定" />
+		</div>
+		<a href="modify.html">
+			<div class="sum" id="sum">
+				<p>登录密码设置成功！</p>
+			</div>
+		</a>
+	</body>
+</html>

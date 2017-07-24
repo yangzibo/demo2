@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none; }
+
+html {
+  background-color: #E3E3E3; }
+
+.box {
+  background-color: #E3E3E3; }
+
+header {
+  background: orange; }
+  header div {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.6rem;
+    color: white; }
+    header div a {
+      padding-left: 0.6rem;
+      padding-top: 0.4rem;
+      transform: scale(1.5); }
+      header div a span {
+        font-size: 20px;
+        color: white; }
+    header div span {
+      font-size: 20px; }
+
+.wanshan {
+  width: 100%;
+  height: 3rem;
+  margin-top: 0.7rem;
+  background-color: white;
+  padding: 0.65rem 0 0.55rem;
+  display: flex;
+  justify-content: space-between; }
+  .wanshan .wanshan-left {
+    display: flex;
+    margin-left: 0.5rem; }
+    .wanshan .wanshan-left .wanshan-left-left img {
+      width: 3rem; }
+    .wanshan .wanshan-left .wanshan-left-right {
+      margin-left: 1.4rem; }
+      .wanshan .wanshan-left .wanshan-left-right div {
+        margin-left: -0.5rem;
+        margin-top: -0.2rem;
+        text-align: center; }
+        .wanshan .wanshan-left .wanshan-left-right div span {
+          color: black;
+          margin-left: -0.5rem; }
+        .wanshan .wanshan-left .wanshan-left-right div div {
+          color: black;
+          width: 4rem;
+          height: 1.5rem;
+          background-color: orange;
+          font-size: 12px;
+          text-align: center;
+          line-height: 1.5rem; }
+  .wanshan .wanshan-right {
+    margin-right: 1rem;
+    margin-top: 0.8rem; }
+    .wanshan .wanshan-right span:nth-child(1) {
+      font-size: 16px;
+      color: orange;
+      position: relative;
+      top: -0.2rem; }
+    .wanshan .wanshan-right span:last-child {
+      font-size: 20px;
+      color: #E3E3E3;
+      margin-right: 0.3rem; }
+
+.denglu {
+  margin-top: 1rem;
+  background-color: white; }
+  .denglu .denglu-top {
+    border-bottom: solid 1px #E3E3E3;
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between; }
+    .denglu .denglu-top span {
+      font-size: 16px;
+      color: black; }
+    .denglu .denglu-top span:last-child {
+      color: #E3E3E3;
+      margin-top: 0.3rem;
+      font-size: 20px;
+      transform: rotate(90deg); }
+  .denglu .denglu-center {
+    padding: 0.6rem 1rem;
+    display: flex;
+    justify-content: space-between; }
+    .denglu .denglu-center span {
+      font-size: 16px;
+      color: black; }
+    .denglu .denglu-center span:last-child {
+      color: #E3E3E3;
+      margin-top: 0.3rem;
+      font-size: 20px;
+      transform: rotate(90deg); }
+
+.btn {
+  margin-top: 0.8rem;
+  background-color: white; }
+  .btn input {
+    background-color: white;
+    width: 100%;
+    height: 3rem;
+    text-align: center;
+    color: black; }
+
+/*# sourceMappingURL=system%20settings.css.map */

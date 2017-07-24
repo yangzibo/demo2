@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none; }
+
+html {
+  font-size: 62.5%; }
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 3.7rem;
+  background: #ffac2c;
+  align-items: center;
+  padding: 0 1.2rem;
+  font-size: 1.5rem;
+  color: #FFFFFF; }
+  nav span:nth-child(1) {
+    font-size: 2.5rem; }
+    nav span:nth-child(1) a {
+      color: #FFFFFF; }
+  nav a {
+    color: #FFFFFF; }
+
+main {
+  text-align: center; }
+  main img {
+    width: 60%;
+    margin: 3.2rem; }
+  main p {
+    line-height: 2.5rem;
+    color: #a2a0a1;
+    font-size: 1.3rem; }
+    main p a {
+      color: #00a3e4; }
+
+/*# sourceMappingURL=app1.css.map */

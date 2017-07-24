@@ -1,0 +1,80 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+body {
+  background: #f5f5f5; }
+
+.header {
+  height: 1.875rem;
+  width: 100%;
+  background: #ffac2c;
+  font-size: 0.75rem;
+  line-height: 1.875rem;
+  color: white;
+  font-family: "榛戜綋"; }
+  .header img {
+    height: 0.75rem;
+    margin-left: 0.625rem;
+    margin-right: 5.6rem; }
+
+.content .phone {
+  height: 4.375rem;
+  color: #818181;
+  border-bottom: 1px solid #eaeaea; }
+  .content .phone .shen {
+    margin-top: 0.8rem;
+    margin-left: 4.25rem;
+    font-size: 0.6rem; }
+  .content .phone .hao {
+    margin-top: 0.95rem;
+    margin-left: 4.55rem;
+    font-size: 1.3rem;
+    color: black; }
+.content .yan {
+  position: relative;
+  display: flex; }
+  .content .yan .shuo {
+    position: absolute;
+    top: 0.6rem;
+    left: 0.65rem;
+    height: 0.8rem; }
+  .content .yan .shu {
+    height: 2rem;
+    width: 16rem;
+    padding-left: 1.7rem;
+    border-top: 1px solid #f6f6f6;
+    border-bottom: 1px solid #f6f6f6;
+    outline: none;
+    font-size: 0.6rem; }
+  .content .yan .fa {
+    position: absolute;
+    top: 0.4rem;
+    right: 0.55rem;
+    display: inline-block;
+    background: #fa5a2a;
+    height: 1.3rem;
+    width: 4.55rem;
+    border-top: 1px solid #f6f6f6;
+    border-bottom: 1px solid #f6f6f6;
+    z-index: 1;
+    border-radius: 5px;
+    font-size: 0.6rem;
+    text-align: center;
+    color: white;
+    line-height: 1.3rem;
+    outline: none; }
+.content .qd {
+  margin-top: 0.9rem;
+  text-align: center;
+  width: 15rem;
+  height: 1.55rem;
+  margin-left: 0.5rem;
+  background: #fed555;
+  border-radius: 5px;
+  color: white;
+  outline: none; }
+
+/*# sourceMappingURL=modify_phone.css.map */

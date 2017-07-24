@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minmum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="format-detection" content="telephone=no, email=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+		<link rel="stylesheet" href="../css/font-awesome.min.css" />
+		<link rel="stylesheet" href="../css/account.css" />
+	</head>
+	<body>
+		<header>
+			<a href="Personal.html"><i class="fa fa-angle-left"></i></a>
+			<p>账户信息<a href="javascript:;"><i class="fa fa-caret-down" id="show"></i></a></p>
+		</header>
+		<div class="account_content">
+			<div class="account">
+				<ul>
+					<li>
+						<div>闪注账户</div>
+						<div>剩余量:<span> 9500 </span>条</div>
+					</li>
+					<li>
+						<div>短信账户</div>
+						<div>剩余量:<span> 865 </span>条</div>
+					</li>
+				</ul>
+			</div>
+			<div class="account_us">
+				<div class="us_float">
+					<div><span><i class=" fa fa-rmb"></i></span>&nbsp;我的充值</div>
+					<div><a href="top.html">我的充值&nbsp;&nbsp;<i class=" fa fa-angle-right"></i></a></div>
+				</div>
+				<div class="us_content">
+					<ul>
+						<li>
+							<div>闪注充值量</div>
+							<div><span>20000</span>条</div>
+						</li>
+						<li>
+							<div>短信充值量</div>
+							<div><span>5000</span>条</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="account_us">
+				<div class="us_float">
+					<div><span class="bg1"><i class=" fa fa-minus"></i></span>&nbsp;我的消费</div>
+					<div><a href="consume.html">查看明细&nbsp;&nbsp;<i class=" fa fa-angle-right"></i></a></div>
+				</div>
+				<div class="us_content">
+					<ul>
+						<li>
+							<div>闪注消费量</div>
+							<div><span>16825</span>条</div>
+						</li>
+						<li>
+							<div>短信消费量</div>
+							<div><span>1548</span>条</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="account_c" id="win">
+				<div class="c_in">
+					<div class="in_all">全部账户</div>
+					<div class="c_slide">
+						<div></div>
+						<div>应用</div>
+						<div></div>
+					</div>
+					<ul class="c_list">
+						<li><a href="details.html">天天消消乐</a></li>
+						<li><a href="javascript:;">大话西游</a></li>
+						<li><a href="javascript:;">王者荣耀</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<script src="../js/jquery.3.1.1.js"></script>
+		<script src="../js/font.js"></script>
+		<script>
+			$("#show").click(function(){
+				$("#win").toggle()
+			})
+		</script>
+	</body>
+</html>
